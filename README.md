@@ -14,14 +14,11 @@ Put your video dataset inside data/video_data
 It should be in this form --
 
 ```
-+ data 
-    + video_data    
-            - bowling
-            - walking
-            + running 
-                    - running0.avi
-                    - running.avi
-                    - runnning1.avi
+data\video_data\
+    reaches_for_screwdriver\
+        clip1.mov ...
+    no_interaction\
+        clip1.mov
 ```
 
 Generate Images from the Video dataset
