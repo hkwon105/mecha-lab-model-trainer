@@ -1,13 +1,8 @@
 # CNN LSTM 
-Implementation of CNN LSTM with Resnet backend for Video Classification
-![alt text](https://raw.githubusercontent.com/HHTseng/video-classification/master/fig/CRNN.png)
+improvised version of https://github.com/pranoyr/cnn-lstm
 
 # Getting Started
-## Prerequisites
-* PyTorch (ver. 0.4+ required)
-* FFmpeg, FFprobe
-* Python 3
-
+used vscode
 
 ### Try on your own dataset 
 
@@ -39,6 +34,7 @@ Once you have created the dataset, start training ->
 ```
 python main.py --use_cuda --gpu 0 --batch_size 8 --n_epochs 100 --num_workers 0  --annotation_path ./data/annotation/ucf101_01.json --video_path ./data/image_data/  --dataset ucf101 --sample_size 150 --lr_rate 1e-4 --n_classes <num_classes>
 ```
+but i used this instead (python main.py --gpu 0 --batch_size 8 --n_epochs 100 --num_workers 0 --annotation_path ./data/annotation/ucf101_01.json --video_path ./data/image_data/ --dataset ucf101 --sample_size 150 --lr_rate 1e-4 --n_classes 2)
 
 ## Note 
 * All the weights will be saved to the snapshots folder 
